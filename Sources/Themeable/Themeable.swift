@@ -13,6 +13,10 @@ public struct Themeable: ViewModifier {
     // MARK: Public
 
     public static var defaultTint: Color = .blue
+    public static var availableThemes: [Color] = [
+        .red, .orange, .yellow, .green, .mint, .teal,
+        .cyan, .blue, .indigo, .purple, .pink, .brown
+    ]
     public static var defaultsKey = Defaults.Key("themeTint") { Self.defaultTint }
 
     public func body(content: Content) -> some View {

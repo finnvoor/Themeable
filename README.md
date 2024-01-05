@@ -3,8 +3,8 @@
 ### Usage
 
 ```swift
-import Themeable
 import SwiftUI
+import Themeable
 
 @main struct MyApp: App {
     init() {
@@ -26,5 +26,14 @@ import SwiftUI
 ### Setting a theme
 
 ```swift
+import SwiftUI
+import Themeable
 
+struct SettingsView: View {
+    var body: some View {
+        Form {
+            ThemePicker()
+        }
+    }
+}
 ```
