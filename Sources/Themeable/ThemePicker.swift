@@ -30,6 +30,7 @@ public struct ThemePicker: View {
                             )
                         }
                     }
+                    Spacer().frame(width: 12)
                 }
             }.listRowInsets(.init(top: 12, leading: 0, bottom: 12, trailing: 0))
         }
