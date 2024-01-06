@@ -14,6 +14,7 @@ public struct ThemePicker: View {
         Section("Theme") {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
+                    Spacer().frame(width: 12)
                     ThemeItem(
                         color: Themeable.defaultTint,
                         tintColor: $tintColor
@@ -30,8 +31,9 @@ public struct ThemePicker: View {
                         }
                     }
                 }
-            }
-        }.sensoryFeedback(.selection, trigger: tintColor)
+            }.listRowInsets(.init(top: 12, leading: 0, bottom: 12, trailing: 0))
+        }
+        .sensoryFeedback(.selection, trigger: tintColor)
     }
 
     // MARK: Private
