@@ -58,7 +58,7 @@ struct ThemeItem: View {
                 .padding(3)
                 .overlay(
                     Circle()
-                        .stroke(.secondary, lineWidth: 3)
+                        .stroke(color.secondary, lineWidth: 3)
                         .opacity(color.resolve(in: .init()) == tintColor.resolve(in: .init()) ? 1 : 0)
                 )
                 .padding(2)
